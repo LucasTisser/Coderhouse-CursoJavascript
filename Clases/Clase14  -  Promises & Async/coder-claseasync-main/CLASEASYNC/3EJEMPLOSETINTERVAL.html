@@ -1,0 +1,24 @@
+<div id="bienvenido">
+  <h1>Bienvenido</h1>
+</div>
+
+<div id="cronometro">
+  <div id="segundos">0</div>
+</div>
+
+<script>
+  //   EJEMPLO NORMAL
+  setInterval(() => {
+    const nombre = prompt("Ingresa tu nombre");
+    const nodo = document.querySelector("#bienvenido");
+    nodo.innerHTML = `<h1>Bienvenido, ${nombre}</h1>`;
+  }, 5000);
+
+  //SEGUNDERO
+  let segundos = 0;
+  setInterval(() => {
+    const nodo = document.querySelector("#segundos");
+    segundos += 1;
+    nodo.innerHTML = segundos;
+  }, 1000);
+</script>

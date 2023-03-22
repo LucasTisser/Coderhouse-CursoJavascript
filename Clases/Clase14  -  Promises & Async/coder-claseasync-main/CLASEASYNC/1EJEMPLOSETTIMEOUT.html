@@ -1,0 +1,15 @@
+<script>
+  const nombre = prompt("INGRESA TU NOMBRE");
+  saludarTarde(nombre);
+  saludar(nombre);
+
+  function saludarTarde(nombre) {
+    setTimeout(() => {
+      console.log("Saludar Tarde: Hola", nombre);
+    }, 3000);
+  }
+
+  function saludar(nombre) {
+    console.log("Saludar: Hola", nombre);
+  }
+</script>

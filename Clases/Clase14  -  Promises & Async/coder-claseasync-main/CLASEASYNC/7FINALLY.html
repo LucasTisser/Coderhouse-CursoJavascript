@@ -1,0 +1,20 @@
+<script>
+  const evento = (res) =>
+    new Promise((resolve, reject) => {
+      if (res === true) {
+        resolve("LA PROMESA SE RESOLVIÓ");
+      } else {
+        reject("LA PROMESA NO SE RESOLVIÓ");
+      }
+    });
+  let resuelve = prompt("Ingrese true o false");
+  if (resuelve === "true") {
+    resuelve = true;
+  } else {
+    resuelve = false;
+  }
+  evento(resuelve)
+    .then((result) => console.log(result))
+    .catch((error) => console.log(error))
+    .finally(() => console.log("FIN DEL PROCESO"));
+</script>

@@ -1,0 +1,60 @@
+[
+    {
+        "imagen": "./imgCustom/desodoranteImg.jpg",
+        "titulo": "Desodorante",
+        "precio": 150,
+        "id": 1,
+        "cantidad": 1
+    },
+    {
+        "imagen": "./imgCustom/ShampooImg.jpg",
+        "titulo": "Shampoo",
+        "precio": 550,
+        "id": 2,
+        "cantidad": 1
+    },
+    {
+        "imagen": "./imgCustom/acondicionadorImg.jpg",
+        "titulo": "Acondicionador",
+        "precio": 600,
+        "id": 3,
+        "cantidad": 1
+    },
+    {
+        "imagen": "./imgCustom/pastaDentalImg.jpg",
+        "titulo": "Pasta Dental",
+        "precio": 340,
+        "id": 4,
+        "cantidad": 1
+    },
+    {
+        "imagen": "./imgCustom/perfumeImg.jpg",
+        "titulo": "Perfume",
+        "precio": 220,
+        "id": 5,
+        "cantidad": 1
+    },
+    {
+        "imagen": "./imgCustom/cremaFacialImg.jpg",
+        "titulo": "Crema facial",
+        "precio": 350,
+        "id": 6,
+        "cantidad": 1
+    },
+
+    
+    {
+        "imagen": "./imgCustom/cepilloDientesImg.jpg",
+        "titulo": "Cepillo de Dientes",
+        "precio": 235,
+        "id": 7,
+        "cantidad": 1
+    },
+    {
+        "imagen": "./imgCustom/alcoholImg.jpg",
+        "titulo": "Perfume",
+        "precio": 220,
+        "id": 8,
+        "cantidad": 1
+    }
+]

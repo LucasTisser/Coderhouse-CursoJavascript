@@ -1,0 +1,45 @@
+<div id="listaUsuarios"></div>
+<script>
+  const usuarios = [
+    {
+      id: 1,
+      nombre: "juan",
+    },
+    {
+      id: 2,
+      nombre: "pedro",
+    },
+    {
+      id: 3,
+      nombre: "amaranta",
+    },
+  ];
+
+  //Escriba una petición que solicite los usuarios según un parámetro dado por el usuario.
+  // En caso de que el parámetro sea TRUE, la promesa llamada por la petición, debe resolverse y devolver el array de usuarios
+  // En caso de que sea otro parámetro, la promesa NO se resuelve y retorna un mensaje de error.
+  // Una vez resuelta la promesa, se debe imprimir el mensaje "FIN DEL PROCESO" y debe mostrar el listado de usuarios en el DOM.
+
+  const res = (datoUsuario) =>
+    new Promise((resolve, reject) => {
+      if (datoUsuario) {
+        resolve(usuarios);
+      } else {
+        reject("No econtramos datos");
+      }
+    });
+
+  let datoUsuario = prompt("Indique true o false");
+  datoUsuario = datoUsuario === "true" ? true : false;
+  res(datoUsuario)
+    .then((resultado) => {
+      const nodo = document.querySelector("#listaUsuarios");
+      resultado.forEach((element) => {
+        const li = document.createElement("li");
+        li.innerHTML = `${element.id} ${element.nombre}`;
+        nodo.appendChild(li);
+      });
+    })
+    .catch((error) => alert(error))
+    .finally(() => alert("Gracias por usar nuestro"));
+</script>

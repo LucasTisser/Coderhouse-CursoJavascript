@@ -1,0 +1,16 @@
+<h1 style="color: red">Su Computador Va a Explotar En:</h1>
+<div id="segundos" style="font-size: 200px">5</div>
+
+<script>
+  let segundos = 5;
+  const intervalHandler = setInterval(() => {
+    const nodo = document.querySelector("#segundos");
+    nodo.innerHTML = segundos;
+    segundos--;
+
+    if (segundos < 0) {
+      clearInterval(intervalHandler);
+      document.body.style = "background-color:black";
+    }
+  }, 1000);
+</script>
